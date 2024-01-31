@@ -25,19 +25,18 @@ while i < num_courses:
 
 average_score = sum(course_scores) / num_courses
 
-if average_score >= 90:
+if average_score >= 85:
     grade = "A"
-elif average_score >= 80:
+elif average_score >= 75:
     grade = "B"
-elif average_score >= 70:
-    grade = "C"
 elif average_score >= 60:
+    grade = "C"
+elif average_score >= 40:
     grade = "D"
 else:
     grade = "F"
 
 grades.append(grade)
-
 
 
 average_score = sum(course_scores) / num_courses
