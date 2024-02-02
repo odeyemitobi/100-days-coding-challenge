@@ -1,1 +1,1 @@
-Today i plan to work with datetime module and then calculate the age of a person based on  his birthdate.
+Today i plan to work with datetime module and then create a calculator that calculate the age of a person based on his birthdate.
