@@ -8,4 +8,4 @@ age = today - date_of_birth
 years = age.days // 365
 months = (age.days % 365) // 30
 days = (age.days % 30)
-print(f"You were born on {birth_date} and you are {years} years old.")
+print(f"You are {years} years old.")
