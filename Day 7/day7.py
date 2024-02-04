@@ -4,52 +4,52 @@ todo_list = []
 
 def mark_task(todo_list, done_sucessfully):
     if not todo_list:
-        print("Your to-do list is empty. No tasks to mark.")
+        print("Empty To-do list. No tasks to mark.")
     else:
         print("Your To-Do List: ")
         for index, item in enumerate(todo_list, start=1):
             status = "Done" if item["done"] else "Undone"
             print(f"{index}. {item['task']} - {status}")
 
-        task_index = int(input("Enter the task number to mark: "))
+        task_index = int(input("Enter the task letter to mark: "))
         if 1 <= task_index <= len(todo_list):
             todo_list[task_index - 1]["done"] = done_sucessfully
             status = "Done" if done_sucessfully else "Undone"
             print(f"Task '{todo_list[task_index - 1]['task']}' marked as {status}!")
         else:
-            print("Invalid task number. Please enter a valid task number.")
+            print("Invalid pick. enter a valid letter.")
 
 
 while True:
 
     print("Menu: ")
-    print("1. Add Task")
-    print("2. View To-Do List")
-    print("3. Mark Task as Done")
-    print("4. Mark Task as Undone")
-    print("5. Quit")
+    print("A. Add Task")
+    print("V. View To-Do List")
+    print("MD. Mark Task as Done")
+    print("MUD. Mark Task as Undone")
+    print("Q. Quit")
 
-    choice = input("Enter your choice (1-5): ")
+    todo_pick = input("Enter your choice (A, V, MD, MUD, Q): ")
 
-    if choice == "1":
+    if todo_pick == "A":
         task = input("Enter the task: ")
         todo_list.append({"task": task, "done": False})
         print(f"Task '{task}' added successfully!")
-    elif choice == "2":
+    elif todo_pick == "V":
         if not todo_list:
-            print("Your to-do list is empty. Add some tasks!")
+            print("Empty to-do list. Add some tasks!")
         else:
             print("Your To-Do List: ")
             for index, item in enumerate(todo_list, start=1):
                 status = "Done" if item["done"] else "Undone"
                 print(f"{index}. {item['task']} - {status}")
 
-    elif choice == "3":
+    elif todo_pick == "MD":
         mark_task(todo_list, True)
-    elif choice == "4":
+    elif todo_pick == "MUD":
         mark_task(todo_list, False)
-    elif choice == "5":
+    elif todo_pick == "Q":
         print("Quit Successfully!")
         break
     else:
-        print("Invalid input. Please enter a number between 1 and 5.")
+        print("Invalid input. Please enter a letter between (A, V, MD, MUD, Q).")
