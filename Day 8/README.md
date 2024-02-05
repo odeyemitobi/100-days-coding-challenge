@@ -1,0 +1,1 @@
+Today i did a code along on how to do a bmi calculator using a udemy course
