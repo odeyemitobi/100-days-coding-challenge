@@ -54,7 +54,7 @@ else:
 
 
 
-print(f"\nAverage Score: {average_score}")
+print(f"Average Score: {average_score}")
 print(f"Grade: {grade}")
 
 gpa = calculate_gpa(average_score)

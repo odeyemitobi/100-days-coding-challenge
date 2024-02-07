@@ -1,0 +1,1 @@
+Created an afcon troll app to celebrate nigeria qualifying for the 2024 Afcon final.
