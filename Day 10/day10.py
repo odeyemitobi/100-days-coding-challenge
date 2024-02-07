@@ -1,11 +1,3 @@
-# number_input = int(input())
-
-# if number_input / 2 % 1 == 0:
-#     print("The number is even")
-# else:
-#     print("The number is odd")
-
-
 print("AFCON TROLLING APP XD")
 
 celebration = input("Who are u supporting (S.A or 9ja or ghana or cameroon or angola): ")
