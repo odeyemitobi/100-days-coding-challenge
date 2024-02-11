@@ -30,7 +30,7 @@ while True:
             elif choice_sign.lower() == "n":
                 continue
             else:
-                print("Invalid Input Please Enter Again.")
+                print("Invalid Input! Please Enter a Valid input Again.")
 
         if choice_sign.lower() == "y":
             while True:
@@ -48,7 +48,7 @@ while True:
 
                 if any(user["Password"] == log_password for user in users):
                     logged_in_user = next(user for user in users if user["Password"] == log_password)
-                    print(f"correct password")
+                    print(f"Successfully Logged in")
                     break
                 else:
                     print("Wrong password. Try again.")
