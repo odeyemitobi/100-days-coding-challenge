@@ -1,6 +1,6 @@
 import random
 
-names_string = "Angela, Ben, Jenny, Michael, Chloe"
+names_string = "Toby, Bendamxi, Yusufmoney, Damstar, Milo, Shortbread"
 names = names_string.split(", ")
 
 random_index = random.randint(0, len(names) - 1)
