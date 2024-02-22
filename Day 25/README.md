@@ -1,0 +1,1 @@
+Added signin function to our sign in form and made a global dictionary that holds all user data after they have signed up and keep it in a database
