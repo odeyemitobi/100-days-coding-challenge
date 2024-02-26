@@ -15,4 +15,4 @@ word_list = user_input.split()
 
 result = smash(word_list)
 
-print("Merged Sentence:", result)
+print(f"Merged Sentence: {result}")
